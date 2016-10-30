@@ -5,4 +5,5 @@ ENV UPSTREAM_ADDRESS 1.2.3.4
 ENV UPSTREAM_PORT 80
 ADD proxy.conf /etc/nginx/conf.d/
 ADD run.sh /
+RUN chmod +x /run.sh
 CMD /run.sh
